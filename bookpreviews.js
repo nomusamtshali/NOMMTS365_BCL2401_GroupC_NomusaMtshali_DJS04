@@ -1,6 +1,7 @@
 class booksPreview extends HTMLElement {
   constructor() {
     super();
+    this.attatchShadow ({mode: 'open'})
   }
 }
 
