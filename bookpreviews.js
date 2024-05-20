@@ -3,6 +3,10 @@ class booksPreview extends HTMLElement {
     super();
     this.attatchShadow ({mode: 'open'})
   }
+
+  connectedCallback () {
+    const {author, id, image, title} = this.dataset 
+  }
 }
 
 customElements.define( name: 'books-preview', booksPreview)
